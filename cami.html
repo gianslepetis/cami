@@ -1,45 +1,32 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>¡Feliz Día, Cami!</title>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+<div class="cami-day-2025">
     <style>
-        /* CSS Reset */
-        *, *::before, *::after {
+        .cami-day-2025 * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
-        body {
+        .cami-day-2025 {
             font-family: 'Roboto', sans-serif;
             line-height: 1.6;
             color: #333;
             overflow-x: hidden;
         }
-
-        /* Header Styles */
-        header {
+        .cami-day-2025 .cd-header {
             background-color: #FFB6C1;
-            padding: 2rem 0;
+            padding: 4rem 0;
             text-align: center;
             position: relative;
             overflow: hidden;
         }
-
-        h1 {
+        .cami-day-2025 .cd-title {
             font-family: 'Pacifico', cursive;
-            font-size: 3rem;
+            font-size: 4rem;
             color: #D58D8D;
             margin-bottom: 1rem;
             position: relative;
             z-index: 2;
         }
-
-        /* Hero Section Styles */
-        .hero {
+        .cami-day-2025 .cd-hero {
             background: url('https://picsum.photos/1200/800') no-repeat center center/cover;
             height: 100vh;
             display: flex;
@@ -48,8 +35,7 @@
             position: relative;
             overflow: hidden;
         }
-
-        .hero-content {
+        .cami-day-2025 .cd-hero-content {
             text-align: center;
             color: #fff;
             padding: 2rem;
@@ -57,49 +43,44 @@
             border-radius: 10px;
             max-width: 80%;
         }
-
-        .hero h2 {
-            font-size: 2.5rem;
+        .cami-day-2025 .cd-hero h2 {
+            font-size: 3.5rem;
             margin-bottom: 1rem;
         }
-
-        /* Gallery Styles */
-        .gallery {
+        .cami-day-2025 .cd-hero p {
+            font-size: 1.8rem;
+        }
+        .cami-day-2025 .cd-gallery {
             padding: 4rem 2rem;
             background-color: #FFC0CB;
         }
-
-        .gallery h2 {
+        .cami-day-2025 .cd-gallery h2 {
             text-align: center;
             margin-bottom: 2rem;
             color: #D58D8D;
+            font-size: 2.5rem;
         }
-
-        .gallery-grid {
+        .cami-day-2025 .cd-gallery-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
             gap: 1rem;
         }
-
-        .gallery-item {
+        .cami-day-2025 .cd-gallery-item {
             position: relative;
             overflow: hidden;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-
-        .gallery-item:hover {
+        .cami-day-2025 .cd-gallery-item:hover {
             transform: scale(1.05);
         }
-
-        .gallery-item img {
+        .cami-day-2025 .cd-gallery-item img {
             width: 100%;
             height: auto;
             display: block;
         }
-
-        .gallery-item .caption {
+        .cami-day-2025 .cd-gallery-item .cd-caption {
             position: absolute;
             bottom: 0;
             left: 0;
@@ -110,30 +91,25 @@
             transform: translateY(100%);
             transition: transform 0.3s ease;
         }
-
-        .gallery-item:hover .caption {
+        .cami-day-2025 .cd-gallery-item:hover .cd-caption {
             transform: translateY(0);
         }
-
-        /* Timeline Styles */
-        .timeline {
+        .cami-day-2025 .cd-timeline {
             padding: 4rem 2rem;
             background-color: #FFE4E1;
         }
-
-        .timeline h2 {
+        .cami-day-2025 .cd-timeline h2 {
             text-align: center;
             margin-bottom: 2rem;
             color: #D58D8D;
+            font-size: 2.5rem;
         }
-
-        .timeline-container {
+        .cami-day-2025 .cd-timeline-container {
             position: relative;
             max-width: 800px;
             margin: 0 auto;
         }
-
-        .timeline-container::after {
+        .cami-day-2025 .cd-timeline-container::after {
             content: '';
             position: absolute;
             width: 6px;
@@ -143,15 +119,13 @@
             left: 50%;
             margin-left: -3px;
         }
-
-        .timeline-item {
+        .cami-day-2025 .cd-timeline-item {
             padding: 10px 40px;
             position: relative;
             background-color: inherit;
             width: 50%;
         }
-
-        .timeline-item::after {
+        .cami-day-2025 .cd-timeline-item::after {
             content: '';
             position: absolute;
             width: 25px;
@@ -163,105 +137,95 @@
             border-radius: 50%;
             z-index: 1;
         }
-
-        .timeline-item:nth-child(even) {
+        .cami-day-2025 .cd-timeline-item:nth-child(even) {
             left: 50%;
         }
-
-        .timeline-item:nth-child(odd) {
+        .cami-day-2025 .cd-timeline-item:nth-child(odd) {
             left: 0;
         }
-
-        .timeline-item:nth-child(even)::after {
+        .cami-day-2025 .cd-timeline-item:nth-child(even)::after {
             left: -16px;
         }
-
-        .timeline-content {
+        .cami-day-2025 .cd-timeline-content {
             padding: 20px 30px;
             background-color: #fff;
             position: relative;
             border-radius: 6px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-
-        /* Messages Styles */
-        .messages {
-            padding: 4rem 2rem;
+        .cami-day-2025 .cd-messages {
             background-color: #F8C8DC;
+        }
+        .cami-day-2025 .cd-messages h2 {
             text-align: center;
-        }
-
-        .messages h2 {
-            margin-bottom: 2rem;
+            padding: 2rem 0;
             color: #D58D8D;
+            font-size: 2.5rem;
         }
-
-        .message {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
+        .cami-day-2025 .cd-message {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2rem;
+            padding: 2rem;
+            text-align: center;
             opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.5s ease, transform 0.5s ease;
+            transition: opacity 0.5s ease;
         }
-
-        /* Footer Styles */
-        footer {
+        .cami-day-2025 .cd-message.active {
+            opacity: 1;
+        }
+        .cami-day-2025 .cd-footer {
             background-color: #D58D8D;
             color: #fff;
             text-align: center;
             padding: 2rem;
+            font-size: 1.2rem;
         }
-
-        /* Responsive Design */
         @media screen and (max-width: 768px) {
-            h1 {
-                font-size: 2rem;
+            .cami-day-2025 .cd-title {
+                font-size: 3rem;
             }
-
-            .hero h2 {
-                font-size: 1.8rem;
+            .cami-day-2025 .cd-hero h2 {
+                font-size: 2.5rem;
             }
-
-            .timeline-container::after {
+            .cami-day-2025 .cd-hero p {
+                font-size: 1.4rem;
+            }
+            .cami-day-2025 .cd-timeline-container::after {
                 left: 31px;
             }
-
-            .timeline-item {
+            .cami-day-2025 .cd-timeline-item {
                 width: 100%;
                 padding-left: 70px;
                 padding-right: 25px;
             }
-
-            .timeline-item::after {
+            .cami-day-2025 .cd-timeline-item::after {
                 left: 15px;
             }
-
-            .timeline-item:nth-child(even) {
+            .cami-day-2025 .cd-timeline-item:nth-child(even) {
                 left: 0;
             }
+            .cami-day-2025 .cd-message {
+                font-size: 1.5rem;
+            }
         }
-
-        /* Animations */
-        @keyframes fadeIn {
+        @keyframes cdFadeIn {
             from { opacity: 0; }
             to { opacity: 1; }
         }
-
-        @keyframes slideIn {
+        @keyframes cdSlideIn {
             from { transform: translateY(50px); opacity: 0; }
             to { transform: translateY(0); opacity: 1; }
         }
-
-        .fade-in {
-            animation: fadeIn 1s ease-out;
+        .cami-day-2025 .cd-fade-in {
+            animation: cdFadeIn 1s ease-out;
         }
-
-        .slide-in {
-            animation: slideIn 1s ease-out;
+        .cami-day-2025 .cd-slide-in {
+            animation: cdSlideIn 1s ease-out;
         }
-
-        /* Particle Effect */
-        #particles-js {
+        .cami-day-2025 #cd-particles-js {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -270,182 +234,201 @@
             z-index: 1;
         }
     </style>
-</head>
-<body>
-    <header>
-        <div id="particles-js"></div>
-        <h1 class="fade-in">¡Feliz Día Cami!</h1>
-    </header>
 
-    <section class="hero">
-        <div class="hero-content slide-in">
+    <div class="cd-header">
+        <div id="cd-particles-js"></div>
+        <h1 class="cd-title cd-fade-in">¡Feliz Día Cami!</h1>
+    </div>
+
+    <div class="cd-hero">
+        <div class="cd-hero-content cd-slide-in">
             <h2>Celebrándote</h2>
             <p>En este día especial, quiero celebrar a la mujer increíble que sos.</p>
         </div>
-    </section>
+    </div>
 
-    <section class="gallery">
+    <div class="cd-gallery">
         <h2>Nuestras memorias</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img data-src="1.jpg" alt="Recuerdo 1" src="">
-                <div class="caption"></div>
+        <div class="cd-gallery-grid">
+            <div class="cd-gallery-item">
+                <img data-src="http://giansalud.com/wp-content/uploads/2025/03/1.jpg" alt="Recuerdo 1">
+                <div class="cd-caption"></div>
             </div>
-            <div class="gallery-item">
-                <img data-src="2.jpg" alt="Recuerdo 2" src="">
-                <div class="caption"></div>
+            <div class="cd-gallery-item">
+                <img data-src="http://giansalud.com/wp-content/uploads/2025/03/2.jpg" alt="Recuerdo 2">
+                <div class="cd-caption"></div>
             </div>
-            <div class="gallery-item">
-                <img data-src="3.jpg" alt="Recuerdo 3" src="">
-                <div class="caption"></div>
+            <div class="cd-gallery-item">
+                <img data-src="http://giansalud.com/wp-content/uploads/2025/03/3.jpg" alt="Recuerdo 3">
+                <div class="cd-caption"></div>
             </div>
-            <div class="gallery-item">
-                <img data-src="4.jpg" alt="Recuerdo 4" src="">
-                <div class="caption"></div>
+            <div class="cd-gallery-item">
+                <img data-src="http://giansalud.com/wp-content/uploads/2025/03/4.jpg" alt="Recuerdo 4">
+                <div class="cd-caption"></div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="timeline">
+    <div class="cd-timeline">
         <h2>Nuestro viaje</h2>
-        <div class="timeline-container">
-            <div class="timeline-item">
-                <div class="timeline-content">
+        <div class="cd-timeline-container">
+            <div class="cd-timeline-item">
+                <div class="cd-timeline-content">
                     <h3>Primer encuentro</h3>
                     <p>El día que nuestras miradas se cruzaron y nuestra historia comenzó.</p>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
+            <div class="cd-timeline-item">
+                <div class="cd-timeline-content">
                     <h3>Primera cita</h3>
                     <p>Una noche mágica que marcó el inicio de nuestra aventura.</p>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
+            <div class="cd-timeline-item">
+                <div class="cd-timeline-content">
                     <h3>Nuestro primer juego con baile</h3>
                     <p>Explorando lugares nuevos y creando recuerdos duraderos juntos.</p>
                 </div>
             </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
+            <div class="cd-timeline-item">
+                <div class="cd-timeline-content">
                     <h3>Avanzando juntos...</h3>
                     <p>Comenzando un nuevo capítulo en un camino compartido.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="messages">
+    <div class="cd-messages">
         <h2>Palabras del corazón</h2>
-        <div id="message-container"></div>
-    </section>
+        <div id="cd-message-container"></div>
+    </div>
 
-    <footer>
+    <div class="cd-footer">
         <p>Hecho con amor para Cami ❤️</p>
-    </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script>
-        // Efecto de partículas
-        particlesJS('particles-js', {
-            particles: {
-                number: { value: 80, density: { enable: true, value_area: 800 } },
-                color: { value: "#ffffff" },
-                shape: { type: "circle" },
-                opacity: { value: 0.5, random: false },
-                size: { value: 3, random: true },
-                line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
-                move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
-            },
-            interactivity: {
-                detect_on: "canvas",
-                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
-                modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
-            },
-            retina_detect: true
-        });
-
-        // Animaciones de desplazamiento
-        function isElementInViewport(el) {
-            const rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
-        }
-
-        function handleScrollAnimations() {
-            const elements = document.querySelectorAll('.timeline-item, .gallery-item');
-            elements.forEach(el => {
-                if (isElementInViewport(el)) {
-                    el.classList.add('fade-in');
+        (function() {
+            function initCamiDay2025() {
+                // Particle effect
+                if (typeof particlesJS !== 'undefined') {
+                    particlesJS('cd-particles-js', {
+                        particles: {
+                            number: { value: 80, density: { enable: true, value_area: 800 } },
+                            color: { value: "#ffffff" },
+                            shape: { type: "circle" },
+                            opacity: { value: 0.5, random: false },
+                            size: { value: 3, random: true },
+                            line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+                            move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
+                        },
+                        interactivity: {
+                            detect_on: "canvas",
+                            events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+                            modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+                        },
+                        retina_detect: true
+                    });
                 }
-            });
-        }
 
-        window.addEventListener('scroll', handleScrollAnimations);
-        window.addEventListener('resize', handleScrollAnimations);
-        handleScrollAnimations();
-
-        // Animación de mensajes
-        const messages = [
-            "Tu sonrisa ilumina mi día.",
-            "Tu fortaleza me inspira.",
-            "Estoy agradecido por cada momento con vos.",
-            "Haces del mundo un lugar mejor.",
-            "Te amo."
-        ];
-
-        const messageContainer = document.getElementById('message-container');
-
-        function displayMessages() {
-            messages.forEach((message, index) => {
-                const messageElement = document.createElement('div');
-                messageElement.classList.add('message');
-                messageElement.textContent = message;
-                messageContainer.appendChild(messageElement);
-
-                setTimeout(() => {
-                    messageElement.style.opacity = '1';
-                    messageElement.style.transform = 'translateY(0)';
-                }, index * 1000);
-            });
-        }
-
-        displayMessages();
-
-        // Manejo de errores
-        window.onerror = function(message, source, lineno, colno, error) {
-            console.error("Ocurrió un error:", message, "en", source, ":", lineno);
-            return true;
-        };
-
-        // Optimización de rendimiento
-        document.addEventListener("DOMContentLoaded", function() {
-            const images = document.querySelectorAll('img');
-            if ('IntersectionObserver' in window) {
-                const imageObserver = new IntersectionObserver((entries, observer) => {
+                // Scroll animations
+                const observer = new IntersectionObserver((entries) => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) {
-                            const image = entry.target;
-                            image.src = image.dataset.src;
-                            imageObserver.unobserve(image);
+                            entry.target.classList.add('cd-fade-in');
+                            observer.unobserve(entry.target);
                         }
                     });
+                }, { threshold: 0.1 });
+
+                document.querySelectorAll('.cami-day-2025 .cd-timeline-item, .cami-day-2025 .cd-gallery-item').forEach(el => {
+                    observer.observe(el);
                 });
 
-                images.forEach(img => {
-                    imageObserver.observe(img);
-                });
-            } else {
-                images.forEach(img => {
-                    img.src = img.dataset.src;
-                });
+                // Message animation
+                const messages = [
+                    "Tu sonrisa ilumina mi día.",
+                    "Tu fortaleza me inspira.",
+                    "Estoy agradecido por cada momento con vos.",
+                    "Haces del mundo un lugar mejor.",
+                    "Te amo."
+                ];
+
+                const messageContainer = document.getElementById('cd-message-container');
+                let currentMessageIndex = 0;
+
+                function createMessageElements() {
+                    messages.forEach((message, index) => {
+                        const messageElement = document.createElement('div');
+                        messageElement.classList.add('cd-message');
+                        messageElement.textContent = message;
+                        messageContainer.appendChild(messageElement);
+                    });
+                }
+
+                function showMessage(index) {
+                    const messageElements = messageContainer.querySelectorAll('.cd-message');
+                    messageElements.forEach((el, i) => {
+                        if (i === index) {
+                            el.classList.add('active');
+                        } else {
+                            el.classList.remove('active');
+                        }
+                    });
+                }
+
+                function handleMessageScroll() {
+                    const messageSection = document.querySelector('.cd-messages');
+                    const messageSectionTop = messageSection.offsetTop;
+                    const messageSectionHeight = messageSection.offsetHeight;
+                    const scrollPosition = window.pageYOffset;
+                    const windowHeight = window.innerHeight;
+
+                    if (scrollPosition + windowHeight > messageSectionTop && scrollPosition < messageSectionTop + messageSectionHeight) {
+                        const scrollPercentage = (scrollPosition + windowHeight - messageSectionTop) / messageSectionHeight;
+                        const messageIndex = Math.floor(scrollPercentage * messages.length);
+                        showMessage(Math.min(messageIndex, messages.length - 1));
+                    }
+                }
+
+                createMessageElements();
+                showMessage(currentMessageIndex);
+
+                window.addEventListener('scroll', handleMessageScroll);
+
+                // Lazy loading images
+                const images = document.querySelectorAll('.cami-day-2025 img[data-src]');
+                if ('IntersectionObserver' in window) {
+                    const imageObserver = new IntersectionObserver((entries, observer) => {
+                        entries.forEach(entry => {
+                            if (entry.isIntersecting) {
+                                const image = entry.target;
+                                image.src = image.dataset.src;
+                                image.removeAttribute('data-src');
+                                imageObserver.unobserve(image);
+                            }
+                        });
+                    });
+
+                    images.forEach(img => {
+                        imageObserver.observe(img);
+                    });
+                } else {
+                    images.forEach(img => {
+                        img.src = img.dataset.src;
+                        img.removeAttribute('data-src');
+                    });
+                }
             }
-        });
+
+            // Initialize when DOM is ready
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initCamiDay2025);
+            } else {
+                initCamiDay2025();
+            }
+        })();
     </script>
-</body>
-</html>
+</div>
